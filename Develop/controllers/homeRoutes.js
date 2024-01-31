@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User } = require('../models');
+const { User, Blog } = require('../models');
 // const withAuth = require('../utils/auth');
 
 
@@ -32,7 +32,7 @@ router.get('/signup', (req, res) => {
     res.redirect('/');
     return;
   }
-  res.render('singUp');
+  res.render('signUp');
 });
 
 router.get('/dashboard', async (req, res) => {
